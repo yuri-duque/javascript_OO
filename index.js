@@ -30,9 +30,7 @@ const conta1 = new ContaCorrente();
 conta1.saldo = 0;
 conta1.agencia = 1001;
 
-console.log(conta1.saldo);
 conta1.depositar(100);
-console.log(conta1.saldo);
 
 let valorSacado = 200;
 conta1.sacar(valorSacado);
