@@ -16,7 +16,7 @@ class ContaCorrente {
             conta1.saldo -= valor;
         else
             console.log('Saldo indisponivel!')
-    }
+    } 
 }
 
 const cliente1 = new Cliente();
