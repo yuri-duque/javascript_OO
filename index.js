@@ -7,8 +7,11 @@ class ContaCorrente {
     agencia;
     saldo;
 
-    depositar(valor){
-        conta1.saldo += valor;
+    depositar(valor) {
+        if (valor > 0)
+            conta1.saldo += valor;
+        else
+            console.log('O valor não pode ser depositado indisponivel!')
     }
 
     sacar(valor) {
@@ -16,7 +19,7 @@ class ContaCorrente {
             conta1.saldo -= valor;
         else
             console.log('Saldo indisponivel!')
-    } 
+    }
 }
 
 const cliente1 = new Cliente();
