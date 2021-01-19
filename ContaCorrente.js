@@ -1,13 +1,12 @@
 import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente{
-    static numeroDeContas = 0;
-    agencia;
-    _cliente;
-   // #saldo =0 https://github.com/tc39/proposal-class-fields#private-fields
-   _saldo = 0;
-    
-
+    constructor(saldo, cliente, agencia){
+        this.agencia = agencia;
+        this.cliente = cliente;
+        this._saldo = saldo;
+        ContaCorrente.numeroDeContas += 1;
+    }
 
     set cliente(novoValor){
         if(novoValor instanceof Cliente){
@@ -23,11 +22,7 @@ export class ContaCorrente{
         return this._saldo;
     }
 
-    constructor(agencia, cliente){
-        this.agencia = agencia;
-        this.cliente = cliente;
-        ContaCorrente.numeroDeContas += 1;
-    }
+    
 
 
     sacar(valor){
