@@ -1,20 +1,12 @@
 {
   "name": "bytebank",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto do bytebank para seus clientes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yuriDuque/alura-JavaScript_programando_a_orientacao_a_objetos.git"
-  },
   "author": "",
   "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/yuriDuque/alura-JavaScript_programando_a_orientacao_a_objetos/issues"
-  },
-  "homepage": "https://github.com/yuriDuque/alura-JavaScript_programando_a_orientacao_a_objetos#readme"
+  "type": "module"
 }
